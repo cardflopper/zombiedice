@@ -4,7 +4,8 @@ Zombie Dice
 
 original dice game credits
 
-Designer: Steve Jackson
-Artist: Alex Fernandez
-Publisher: Steve Jackson Games
+* Designer: Steve Jackson
+* Artist: Alex Fernandez
+* Publisher: Steve Jackson Games
+
 see more game info on [boardgamegeek.com](https://boardgamegeek.com/boardgame/62871/zombie-dice/credits)
