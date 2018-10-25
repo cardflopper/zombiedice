@@ -1,0 +1,45 @@
+.diceCup,
+.lock {
+  width: 100px;
+}
+
+.rotated {
+  transform: rotate(90deg);
+}
+
+.diceGroup {
+  border: 2px solid grey;
+  min-height: 52px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+
+.rolled {
+  border-style: dashed;
+}
+
+.container {
+  text-align: center;
+}
+
+.banner {
+  width: 70%;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    width: 40%;
+  }
+  .diceGroup {
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .diceCup,
+  .lock {
+    width: 50px;
+  }
+}
