@@ -12,11 +12,11 @@ const Dice = {
 Dice.faceToString = function(face) {
   switch (face) {
     case Dice.Brain:
-      return "Brain";
+      return "brain";
     case Dice.Steps:
-      return "Steps";
+      return "steps";
     case Dice.Shotgun:
-      return "Shotgun";
+      return "shotgun";
     default:
       return "Error";
   }
@@ -25,11 +25,11 @@ Dice.faceToString = function(face) {
 Dice.colorToString = function(color) {
   switch (color) {
     case Dice.Green:
-      return "Green";
+      return "green";
     case Dice.Yellow:
-      return "Yellow";
+      return "yellow";
     case Dice.Red:
-      return "Red";
+      return "red";
     default:
       return "Error";
   }
