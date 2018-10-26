@@ -73,7 +73,7 @@ class App extends Component {
       action = "click on next turn";
     } else if (currentStepsCount === rolled.length) {
       action = "click roll";
-      if (this.state.currentBrains > 0) action += ", or click next turn";
+      if (this.state.currentBrains.length > 0) action += ", or click next turn";
     } else action = "handle dice";
 
     this.setState({
@@ -113,12 +113,11 @@ class App extends Component {
           currentShotguns = currentShotguns.concat(newShotguns);
         }
 
-        action =
-          rolled.filter(i => i.face !== Dice.Steps).length === 0
-            ? "click roll"
-            : action;
-
-        action += currentBrains.length > 0 ? ", or click next turn" : "";
+        //if we have all steps it's time to roll
+        if (rolled.filter(i => i.face !== Dice.Steps).length === 0) {
+          action = "click roll";
+          if (currentBrains.length > 0) action += ", or click next turn";
+        }
 
         //no dice left in the cup and no steps remaining to roll
         if (this.getTotalDice() === 0 && rolled.length === 0) {
